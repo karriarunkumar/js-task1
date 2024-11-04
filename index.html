@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //days
+        var day="friday";
+        if(day == "monday"){
+            console.log("Start your week strong!");
+        }
+        else if(day== "tuesday"){
+            console.log("Keep going!");
+        }
+        else if(day == "wednesday"){
+            console.log("Halfway there!");
+        }
+        else if(day == "thrusday"){
+            console.log("Almost the weekend!");
+        }
+        else if(day == "friday"){
+            console.log("“Happy Friday!”");
+        }
+        else {
+            console.log("Enjoy your weekend!")
+        }
+        //traffic light
+        var col="yellow";
+        if(col == "red"){
+            console.log("“Stop!”");
+        }
+        else if(col == "yellow"){
+            console.log("'Get ready'");
+        }
+        else if(col == "green"){
+            console.log("Go");
+        }
+        else{
+            console.log("invalid");
+        }
+        //shopping mall discount
+        var a=+prompt("Enter the Amount");
+        if(a<50){
+            console.log("“No discount”");
+        }
+        else if(a<=100){
+            console.log("“5% discount”");
+        }
+        else if(a<200){
+            console.log("“10% discount”");
+        }
+        else if(a>200){
+            console.log("“15% discount”");
+        }
+        else{
+            console.log("Happy Shopping!")
+        }
+        //hotel items
+        var item="biriyani";
+
+        switch(item){
+            case "biriyani": console.log("Biriyani price is 250.00");
+            break;
+            case "shawarma" : console.log("Shawarma price is 90.00");
+            break;
+            case "veg pula": console.log("veg pula price is 100.00");
+            break;
+            case "fried rice": console.log("Fried rice is 120.00");
+            break;
+            default: console.log("Invalid");
+            break;
+        }
+        //operations
+        let num1=+prompt("Enter a number");
+        let num2=+prompt("Enter a number");
+
+        let opp=prompt("Enter the opp");
+
+        switch(opp){
+            case "+": console.log(num1 + num2);
+            break;
+            case "-": console.log(num1 - num2);
+            break;
+            case "*": console.log(num1 * num2);
+            break;
+            case "/": console.log(num1 / num2);
+            break;
+            case "%": console.log(num1 % num2);
+            break;
+            default:console.log("not valid");
+            break;
+        } 
+        // ascii value
+        for(i=65;i<=90;i++){
+            console.log(String.fromCharCode(i));
+        }
+    </script>
+</body>
+</html>
